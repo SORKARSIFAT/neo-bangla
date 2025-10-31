@@ -1,0 +1,248 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Typography */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fafafa;
+  color: #222;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Add vertical spacing between sections */
+section {
+  margin: 3rem 0; /* more space above and below each section */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #004d00; 
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #90ee90; /* light green */
+}
+
+/* Mobile Navbar Toggle */
+.nav-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+   background-image: url('./image/muslimbongo-col/map.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;  
+  background-size: cover;  
+  height: 1000px; 
+  display: flex;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  padding: 0 20px; 
+  box-sizing: border-box;
+
+  padding: 5rem 0 6rem 0;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  color: rgb(254, 253, 253);
+}
+
+.hero-section p {
+  font-size: 2rem;
+  max-width: 720px;
+  margin: 0 auto;
+  color:rgb(245, 233, 233);
+  line-height: 1.7;
+}
+
+/* Flag Section */
+.flag-section {
+  background-color: white;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.flag-section h2 {
+  color: #004d00;
+  margin-bottom: 1.5rem;
+}
+
+.flag-image {
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 1.5rem;
+  border: 2px solid #3a7d44;
+  border-radius: 6px;
+}
+
+.flag-section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.flag-section ul li {
+  margin-bottom: 0.8rem;
+}
+
+/* Proclamation & Manifesto Sections */
+.bordered-section {
+  background-color: white;
+  padding: 4rem 2rem;
+  margin: 3rem auto;
+  border: 3px solid #3a7d44; /* greenish border */
+  border-radius: 8px;
+  width: 90%;
+}
+
+.section-content {
+  max-width: 900px;
+  margin: 0 auto;
+  color: #222;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.bordered-section h2 {
+  color: #004d00;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Subtitle styling inside proclamation and manifesto */
+.bordered-section p strong {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #2a5d2a;
+}
+
+/* Paragraph spacing */
+.bordered-section p {
+  margin-bottom: 1.3rem;
+}
+
+/* Lists spacing */
+.bordered-section ul {
+  list-style-type: disc;
+  padding-left: 1.8rem;
+  margin: 1.5rem 0 2rem 2rem;
+}
+
+.bordered-section ul li {
+  margin-bottom: 0.9rem;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #004d00;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+
+
+@media (max-width: 768px) {
+
+  .flag-image{
+  width: 200px;
+}
+  #hero {
+    height: 300px; 
+    padding: 0 15px;
+  }
+
+  #hero h1 {
+    font-size: 1.8rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #004d00;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 150px;
+    border-radius: 4px;
+    padding: 0.5rem 0;
+  }
+
+  .nav-links.nav-active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+
+}
