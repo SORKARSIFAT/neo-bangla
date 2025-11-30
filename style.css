@@ -194,10 +194,13 @@ section {
 .footer {
   background-color: #004d00;
   color: white;
-  padding: 1rem 0;
+  padding: 1rem 1rem;
   text-align: center;
   font-size: 0.9rem;
 }
+
+
+
 
 /* Responsive Styles */
 
